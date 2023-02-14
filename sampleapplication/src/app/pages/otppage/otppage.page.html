@@ -1,0 +1,21 @@
+<div class="head">
+  <ion-header>
+    <ion-toolbar>
+      <h1>Verification</h1>
+      <!-- <ion-buttons slot="end">
+        <ion-button color="primary" routerLink="register">Sign Up</ion-button>
+      </ion-buttons> -->
+    </ion-toolbar>
+  </ion-header>
+</div>
+<ion-content class="fondologin">
+  <div class="header">
+    <img src="./../../../assets/image/download__1_-removebg-preview.png">
+    <p>You will get a OTP via SMS</p>
+  </div>
+  <form class="form">
+    <ng-otp-input (onInputChange)="onOtpChange($event)" [config]="{length:5}"></ng-otp-input>
+    <ion-button class="login" expand="full" shape="round" routerLink="/sidebar">VERFIY</ion-button>
+    <p>Don't receive the verification OTP?<a routerLink="/login">Resend again</a></p>
+  </form>
+</ion-content>

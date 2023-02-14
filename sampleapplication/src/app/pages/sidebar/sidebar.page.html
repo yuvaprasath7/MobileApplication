@@ -1,0 +1,21 @@
+<ion-buttons slot="start">
+  <ion-menu-button></ion-menu-button>
+</ion-buttons>
+<ion-menu side="start" menuId="menu" contentId="main" class="side-menu">
+  <ion-toolbar>
+    <h5>Menu</h5>
+  </ion-toolbar>
+  <ion-content>
+    <ion-list lines="none">
+      <ion-menu-toggle autoHide="false">
+        <ion-item routerLink="/user-profile" routerLinkActive="active">
+          <ion-icon name="person"></ion-icon>
+          <ion-label>
+            User Profile
+          </ion-label>
+        </ion-item>
+      </ion-menu-toggle>
+    </ion-list>
+  </ion-content>
+</ion-menu>
+<ion-router-outlet id="main"></ion-router-outlet>

@@ -1,0 +1,46 @@
+<div class="head">
+  <ion-header>
+    <ion-toolbar>
+        <h1>User-Profile</h1>
+        <ion-icon slot="start" name="chevron-back-outline" routerLink="/sidebar"></ion-icon>
+    </ion-toolbar>
+  </ion-header>
+</div>
+  <ion-content class="fondologin">
+    <div class="header">
+      <img src="./../../../assets/image/images.jfif">
+      <p>Enter User Details</p>
+    </div>
+    <form class="form">
+      <ion-item>
+        <ion-label position="floating">User Name</ion-label>
+        <ion-input placeholder="Enter Name"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">Email</ion-label>
+        <ion-input placeholder="Enter Email"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">Mobile Number</ion-label>
+        <ion-input placeholder="Enter Mobile Number"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">Whatshap Number</ion-label>
+        <ion-input placeholder="Enter text"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-textarea placeholder="Address" [autoGrow]="true">
+        </ion-textarea>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">Date OF Birth</ion-label>
+        <ion-input placeholder="Enter Date OF Birth"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">Pin Code</ion-label>
+        <ion-input placeholder="Enter Number"></ion-input>
+      </ion-item>
+      <ion-button class="login" routerLink="/otppage" expand="full" shape="round">Submit</ion-button>
+    </form>
+  </ion-content>
+

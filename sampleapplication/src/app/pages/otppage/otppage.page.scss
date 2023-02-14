@@ -31,16 +31,12 @@ ion-toolbar {
   }
 
   p {
-    width: 79%;
+    width: 98%;
     text-align: center;
+    padding-top: 12px;
     color: #AAAAAA;
   }
 }
-
-
-
-
-
 .form {
   margin-top: 15%;
   padding-left: 30px;
@@ -53,5 +49,16 @@ ion-toolbar {
     width: 75%;
     margin-left: 33px;
     border-radius: 50%;
+  }
+
+  p {
+    width: 98%;
+    text-align: center;
+    padding-top: 12px;
+    color: #AAAAAA;
+  }
+
+  ng-otp-input{
+    text-align: center;
   }
 }
