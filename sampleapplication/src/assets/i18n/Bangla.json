@@ -1,3 +1,24 @@
 {
-  "feeadBack":"प्रोफ़ाइल"
+  "veriFication":"প্রতিপাদন",
+  "weWillSendYouOneTimePassword":"আমরা আপনাকে আপনার ফোন নম্বরে একটি ওয়ান টাইম পাসওয়ার্ড পাঠাব",
+  "mobileNumber":"মোবাইল নম্বর",
+  "getOtp":"গেট",
+
+
+
+  "youWillGeOtpSms":"আপনি SMS এর মাধ্যমে একটি OTP পাবেন",
+  "verify":"যাচাই করুন",
+  "dontReceiveVerificationOtp":"যাচাইকরণ ওটিপি পান না?",
+  "resendAgain":"আবার পাঠান",
+
+
+  "menu":"তালিকা",
+  "userProfileRegister":"ব্যবহারকারী প্রোফাইল নিবন্ধন",
+  "travel":"ভ্রমণ",
+  "event":"ঘটনা",
+  "accomdation":"বাসস্থান",
+  "support":"সমর্থন",
+  "accountSeetting":"অ্যাকাউন্ট সেটিং",
+  "feeadBack":"ফিড ব্যাক"
+
 }

@@ -8,12 +8,14 @@ import { OTPPagePageRoutingModule } from './otppage-routing.module';
 
 import { OTPPagePage } from './otppage.page';
 import { NgOtpInputModule } from  'ng-otp-input';
+import { TranslateModule } from '@ngx-translate/core';
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    OTPPagePageRoutingModule,NgOtpInputModule
+    OTPPagePageRoutingModule,NgOtpInputModule,
+    TranslateModule
   ],
   declarations: [OTPPagePage]
 })

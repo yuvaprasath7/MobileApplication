@@ -1,3 +1,24 @@
 {
-  "feeadBack":"சுயவிவரம்"
+  "veriFication":"சரிபார்ப்பு",
+  "weWillSendYouOneTimePassword":"உங்கள் தொலைபேசி எண்ணில் ஒரு முறை கடவுச்சொல்லை அனுப்புவோம்",
+  "mobileNumber":"கைபேசி எண்",
+  "getOtp":"பெறவும்",
+
+
+  "youWillGeOtpSms":"நீங்கள் எஸ்எம்எஸ் மூலம் பெறுவீர்கள்",
+  "verify":"சரிபார்க்கவும்",
+  "dontReceiveVerificationOtp":"சரிபார்ப்பு OTP பெறவில்லையா?",
+  "resendAgain":"மீண்டும் அனுப்பவும்",
+
+
+  "menu":"பட்டியல்",
+  "userProfileRegister":"பயனர் சுயவிவரப் பதிவு",
+  "travel":"பயணம்",
+  "event":"நிகழ்வு",
+  "accomdation":"தங்குமிடம்",
+  "support":"Support",
+  "accountSeetting":"கணக்கு அமைத்தல்",
+  "feeadBack":"பின்னூட்டம்"
+
+
 }

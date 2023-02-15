@@ -8,15 +8,11 @@ import { TranslateService } from '@ngx-translate/core';
   styleUrls: ['./sidebar.page.scss'],
 })
 export class SidebarPage implements OnInit {
-  selected = 'English';
 
-  constructor(private menu: MenuController, public translate: TranslateService) {
-    translate.addLangs(['English', 'Hindi', 'Tamil', 'Bangla']);
+
+  constructor(private menu: MenuController, ) {
   }
   ngOnInit() {
   }
 
-  changeLang() {
-    this.translate.use(this.selected);
-  }
 }

@@ -1,23 +1,33 @@
 <div class="head">
   <ion-header>
     <ion-toolbar>
-        <h1>Verification</h1>
-      <!-- <ion-buttons slot="end">
-        <ion-button color="primary" routerLink="register">Sign Up</ion-button>
-      </ion-buttons> -->
+      <h1>{{'veriFication'|translate}}</h1>
+      <select  class="form-select w-50" aria-label="Default select example" #langSelect (change)="changeLang()"
+        [(ngModel)]="selected">
+        <option *ngFor="let lang of translate.getLangs()" [value]="lang" [selected]="lang === translate.currentLang"> {{
+          lang |translate}}</option>
+      </select>
     </ion-toolbar>
+    <!-- <ion-list>
+    <ion-item>
+      <ion-select placeholder="Select"  #langSelect  (change)="changeLang()" [(ngModel)]="selected">
+        <ion-select-option *ngFor="let lang of translate.getLangs()" [selected]="lang === translate.currentLang"  [value]="lang">{{ lang |translate}}</ion-select-option>
+      </ion-select>
+    </ion-item>
+  </ion-list> -->
   </ion-header>
-</div>
-  <ion-content class="fondologin">
-    <div class="header">
-      <img src="./../../../assets/image/download__1_-removebg-preview.png">
-      <p> We will send you a One Time Password on Your Phone Number</p>
-    </div>
-    <form class="form" [formGroup]="otpForm">
-      <ion-item>
-        <ion-input formControlName="mobileNumber" placeholder="Mobile Number"></ion-input>
-      </ion-item>
-      <ion-button class="login" routerLink="/otppage" expand="full" shape="round" (click)="generateOTP()">GET OTP</ion-button>
-    </form>
-  </ion-content>
 
+</div>
+<ion-content class="fondologin">
+  <div class="header">
+    <img src="./../../../assets/image/download__1_-removebg-preview.png">
+    <p>{{'weWillSendYouOneTimePassword'|translate}}</p>
+  </div>
+  <form class="form" [formGroup]="otpForm">
+    <ion-item>
+      <ion-input formControlName="mobileNumber" placeholder="{{'mobileNumber'|translate}}"></ion-input>
+    </ion-item>
+    <ion-button class="login" routerLink="/otppage" expand="full" shape="round"
+      (click)="generateOTP()">{{'getOtp'|translate}}</ion-button>
+  </form>
+</ion-content>

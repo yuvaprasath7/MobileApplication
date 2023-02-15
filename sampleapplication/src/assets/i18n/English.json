@@ -1,3 +1,22 @@
 {
-  "feeadBack":" Fead Back"
+  "veriFication":"Verification",
+  "weWillSendYouOneTimePassword":"We will send you a One Time Password on Your Phone Number",
+  "mobileNumber":"Mobile Number",
+  "getOtp":"GET OTP",
+
+  "youWillGeOtpSms":"You will get a OTP via SMS",
+  "verify":"VERFIY",
+  "dontReceiveVerificationOtp":"Don't receive the verification OTP?",
+  "resendAgain":"Resend again",
+
+
+  "menu":"Menu",
+  "userProfileRegister":"User Profile Register",
+  "travel":"Travel",
+  "event":"Event",
+  "accomdation":"Accomdation",
+  "support":"Support",
+  "accountSeetting":"Account Seetting",
+  "feeadBack":"Feead Back"
+
 }
