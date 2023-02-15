@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-login',
@@ -6,10 +7,19 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./login.page.scss'],
 })
 export class LoginPage implements OnInit {
-
-  constructor() { }
+  otpForm !: FormGroup;
+  constructor(private formBuilder: FormBuilder) { }
 
   ngOnInit() {
+    this.otpValidation();
+  }
+  otpValidation(){
+    this.otpForm = this.formBuilder.group({
+      mobileNumber: ['', Validators.required],
+    });
   }
 
+  generateOTP(){
+
+  }
 }

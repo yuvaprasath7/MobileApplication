@@ -13,11 +13,11 @@
       <img src="./../../../assets/image/download__1_-removebg-preview.png">
       <p> We will send you a One Time Password on Your Phone Number</p>
     </div>
-    <form class="form">
+    <form class="form" [formGroup]="otpForm">
       <ion-item>
-        <ion-input placeholder="Mobile Number"></ion-input>
+        <ion-input formControlName="mobileNumber" placeholder="Mobile Number"></ion-input>
       </ion-item>
-      <ion-button class="login" routerLink="/otppage" expand="full" shape="round">GET OTP</ion-button>
+      <ion-button class="login" routerLink="/otppage" expand="full" shape="round" (click)="generateOTP()">GET OTP</ion-button>
     </form>
   </ion-content>
 

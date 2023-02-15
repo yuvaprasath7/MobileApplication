@@ -7,14 +7,17 @@ import { IonicModule } from '@ionic/angular';
 import { SidebarPageRoutingModule } from './sidebar-routing.module';
 
 import { SidebarPage } from './sidebar.page';
+import { LangChangeEvent, TranslateModule, TranslateService } from '@ngx-translate/core';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    SidebarPageRoutingModule
+    SidebarPageRoutingModule,
+    TranslateModule
   ],
   declarations: [SidebarPage]
 })
-export class SidebarPageModule {}
+export class SidebarPageModule {
+}

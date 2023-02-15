@@ -1,5 +1,6 @@
 import { Component, OnInit, Renderer2 } from '@angular/core';
 import { MenuController } from '@ionic/angular';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-sidebar',
@@ -7,23 +8,15 @@ import { MenuController } from '@ionic/angular';
   styleUrls: ['./sidebar.page.scss'],
 })
 export class SidebarPage implements OnInit {
+  selected = 'English';
 
-  constructor(private menu: MenuController) { }
-
+  constructor(private menu: MenuController, public translate: TranslateService) {
+    translate.addLangs(['English', 'Hindi', 'Tamil', 'Bangla']);
+  }
   ngOnInit() {
   }
 
-  openFirst() {
-    this.menu.enable(true, 'first');
-    this.menu.open('first');
-  }
-
-  openEnd() {
-    this.menu.open('end')
-  }
-
-  openCustome() {
-    this.menu.enable(true, 'custome');
-    this.menu.open('custom');
+  changeLang() {
+    this.translate.use(this.selected);
   }
 }

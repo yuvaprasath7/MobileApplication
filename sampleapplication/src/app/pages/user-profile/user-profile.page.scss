@@ -15,7 +15,8 @@ ion-toolbar {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 3%;
+  padding-top: 7%;
+  height: 30%;
 
   h1 {
     font-weight: 700;
@@ -23,18 +24,11 @@ ion-toolbar {
     color: #010100;
     margin-bottom: 15%;
   }
-
-  img {
-    width: 145px;
-    height: 133px;
-    border-radius: 50%;
-  }
-
-  p {
-    width: 79%;
-    text-align: center;
-    color: #AAAAAA;
-  }
+}
+p {
+  width: 93%;
+  text-align: center;
+  color: #AAAAAA;
 }
 .form {
   padding-left: 30px;
@@ -50,10 +44,62 @@ ion-toolbar {
   }
 }
 
+.danger{
+  color: red;
+  margin-top: 4px;
+}
 ion-icon{
   font-size: 30px;
 }
 
-ion-card{
-  height: 120%;
+
+
+
+.camera-icon {
+  height: 30px;
+  width: 30px;
+  color: white;
 }
+.outer {
+  width: 120%  !important;
+  height: 100% !important;
+  max-width: 150px !important; /* any size */
+  max-height: 150px !important; /* any size */
+  margin: -3px -18px;
+  border-radius: 100%;
+  position: relative;
+  background-size: 150px 150px;
+  color: #232D39;
+
+}
+.inner {
+  background-color: #075E54;
+  width: 39px;
+  height: 38px;
+  border-radius: 100%;
+  position: absolute;
+  top: 107px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  left: 107px;
+  padding: 7px;
+
+}
+.container {
+  width: 150px;
+  height: 150px;
+  display: block;
+  margin: 0 auto;
+
+}
+.upload_image{
+  width: 120% !important;
+  height: 100% !important;
+  max-width: 150px !important; /* any size */
+  max-height: 150px !important; /* any size */
+  border-radius: 100%;
+  position: relative;
+  overflow: hidden;
+}
+

@@ -1,28 +1,3 @@
-<!-- <ion-buttons slot="start">
-  <ion-menu-button></ion-menu-button>
-</ion-buttons>
-<ion-toolbar>
-</ion-toolbar>
-<ion-menu side="start" menuId="menu" contentId="main" class="side-menu">
-  <ion-toolbar>
-    <h5>Menu</h5>
-  </ion-toolbar>
-  <img src="./../../../assets/image/download (1).jfif">
-  <ion-content>
-    <ion-list lines="none">
-      <ion-menu-toggle autoHide="false">
-        <ion-item routerLink="/user-profile" routerLinkActive="active">
-          <ion-icon name="person"></ion-icon>
-          <ion-label>
-            User Profile Register
-          </ion-label>
-        </ion-item>
-      </ion-menu-toggle>
-    </ion-list>
-  </ion-content>
-</ion-menu>
-<ion-router-outlet id="main"></ion-router-outlet> -->
-
 <ion-menu contentId="main-content">
   <ion-header>
     <ion-toolbar>
@@ -34,12 +9,59 @@
     <ion-list lines="none">
       <ion-menu-toggle autoHide="false">
         <ion-item routerLink="/user-profile" routerLinkActive="active">
-          <ion-icon name="person"></ion-icon>
+          <ion-icon name="person-outline"></ion-icon>
           <ion-label>
             User Profile Register
           </ion-label>
         </ion-item>
+        <ion-item routerLink="/" routerLinkActive="active">
+          <ion-icon name="car-outline"></ion-icon>
+          <ion-label>
+            Travel
+          </ion-label>
+        </ion-item>
+        <ion-item routerLink="/" routerLinkActive="active">
+          <ion-icon name="today-outline"></ion-icon>
+          <ion-label>
+            Event
+          </ion-label>
+        </ion-item>
+        <ion-item routerLink="/" routerLinkActive="active">
+          <ion-icon name="shield-checkmark-outline"></ion-icon>
+          <ion-label>
+            Accomdation
+          </ion-label>
+        </ion-item>
+        <ion-item routerLink="/" routerLinkActive="active">
+          <ion-icon name="receipt-outline"></ion-icon>
+          <ion-label>
+            Support
+          </ion-label>
+        </ion-item>
       </ion-menu-toggle>
+    </ion-list>
+    <h6>Account Seetting</h6>
+    <ion-list lines="none">
+      <ion-item>
+        <ion-icon name="globe-outline"></ion-icon>
+        <select class="form-select" aria-label="Default select example" #langSelect
+        (change)="changeLang()" [(ngModel)]="selected">
+        <option *ngFor="let lang of translate.getLangs()"
+        [value]="lang" [selected]="lang === translate.currentLang"> {{ lang |translate}}</option>
+      </select>
+      </ion-item>
+      <ion-item>
+        <ion-icon name="chatbox-outline"></ion-icon>
+        <ion-label>
+          {{"feeadBack"|translate}}
+        </ion-label>
+      </ion-item>
+      <ion-item >
+        <ion-icon name="exit-outline"></ion-icon>
+        <ion-label>
+          LogOut
+        </ion-label>
+      </ion-item>
     </ion-list>
   </ion-content>
 </ion-menu>
@@ -53,6 +75,6 @@
     </ion-toolbar>
   </ion-header>
   <ion-content class="ion-padding">
-    <img src="./../../../assets/image/people-welcoming-concept-with-foliage-background_52683-23790.avif">
+    <img src="./../../../assets/image/welcome.avif">
   </ion-content>
 </div>
