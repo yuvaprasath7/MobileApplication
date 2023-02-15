@@ -1,21 +1,58 @@
-<ion-buttons slot="start">
+<!-- <ion-buttons slot="start">
   <ion-menu-button></ion-menu-button>
 </ion-buttons>
+<ion-toolbar>
+</ion-toolbar>
 <ion-menu side="start" menuId="menu" contentId="main" class="side-menu">
   <ion-toolbar>
     <h5>Menu</h5>
   </ion-toolbar>
+  <img src="./../../../assets/image/download (1).jfif">
   <ion-content>
     <ion-list lines="none">
       <ion-menu-toggle autoHide="false">
         <ion-item routerLink="/user-profile" routerLinkActive="active">
           <ion-icon name="person"></ion-icon>
           <ion-label>
-            User Profile
+            User Profile Register
           </ion-label>
         </ion-item>
       </ion-menu-toggle>
     </ion-list>
   </ion-content>
 </ion-menu>
-<ion-router-outlet id="main"></ion-router-outlet>
+<ion-router-outlet id="main"></ion-router-outlet> -->
+
+<ion-menu contentId="main-content">
+  <ion-header>
+    <ion-toolbar>
+      <ion-title>Menu</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content class="ion-padding">
+    <img class="side_img" src="./../../../assets/image/download (1).jfif">
+    <ion-list lines="none">
+      <ion-menu-toggle autoHide="false">
+        <ion-item routerLink="/user-profile" routerLinkActive="active">
+          <ion-icon name="person"></ion-icon>
+          <ion-label>
+            User Profile Register
+          </ion-label>
+        </ion-item>
+      </ion-menu-toggle>
+    </ion-list>
+  </ion-content>
+</ion-menu>
+<div class="ion-page" id="main-content">
+  <ion-header>
+    <ion-toolbar>
+      <ion-buttons slot="start">
+        <ion-menu-button></ion-menu-button>
+      </ion-buttons>
+      <ion-title>DasBoard</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content class="ion-padding">
+    <img src="./../../../assets/image/people-welcoming-concept-with-foliage-background_52683-23790.avif">
+  </ion-content>
+</div>

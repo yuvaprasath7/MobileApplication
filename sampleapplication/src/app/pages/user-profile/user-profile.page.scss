@@ -1,10 +1,10 @@
 ion-content {
-  --ion-background-color: #F7F7F7;
+  // --ion-background-color: #F7F7F7;
   padding-top: 20%;
 }
 
 ion-toolbar {
-  --ion-background-color: #E9E9E9;
+  // --ion-background-color: #E9E9E9;
 
   h1 {
     text-align: center;
@@ -15,7 +15,7 @@ ion-toolbar {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 15%;
+  padding-top: 3%;
 
   h1 {
     font-weight: 700;
@@ -37,7 +37,6 @@ ion-toolbar {
   }
 }
 .form {
-  margin-top: 4%;
   padding-left: 30px;
   padding-right: 30px;
 
@@ -53,4 +52,8 @@ ion-toolbar {
 
 ion-icon{
   font-size: 30px;
+}
+
+ion-card{
+  height: 120%;
 }
