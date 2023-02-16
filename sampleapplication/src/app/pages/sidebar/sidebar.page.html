@@ -14,25 +14,25 @@
             {{'userProfileRegister'|translate}}
           </ion-label>
         </ion-item>
-        <ion-item routerLink="/" routerLinkActive="active">
+        <ion-item>
           <ion-icon name="car-outline"></ion-icon>
           <ion-label>
             {{'travel'|translate}}
           </ion-label>
         </ion-item>
-        <ion-item routerLink="/" routerLinkActive="active">
+        <ion-item>
           <ion-icon name="today-outline"></ion-icon>
           <ion-label>
             {{'event'|translate}}
           </ion-label>
         </ion-item>
-        <ion-item routerLink="/" routerLinkActive="active">
+        <ion-item >
           <ion-icon name="shield-checkmark-outline"></ion-icon>
           <ion-label>
             {{'accomdation'|translate}}
           </ion-label>
         </ion-item>
-        <ion-item routerLink="/" routerLinkActive="active">
+        <ion-item>
           <ion-icon name="receipt-outline"></ion-icon>
           <ion-label>
             {{'support'|translate}}
@@ -43,6 +43,10 @@
     <h6>{{'accountSeetting'|translate}}</h6>
     <ion-list lines="none">
       <ion-item>
+        <ion-toggle (ionChange)="onToggleColorTheme($event)"></ion-toggle>
+        <ion-label>Dark Theme Toogle</ion-label>
+      </ion-item>
+      <ion-item>
         <ion-icon name="chatbox-outline"></ion-icon>
         <ion-label>
           {{"feeadBack"|translate}}
@@ -50,8 +54,8 @@
       </ion-item>
       <ion-item >
         <ion-icon name="exit-outline"></ion-icon>
-        <ion-label>
-          LogOut
+        <ion-label  routerLink="/login" >
+          {{'logOut'|translate}}
         </ion-label>
       </ion-item>
     </ion-list>
@@ -63,7 +67,7 @@
       <ion-buttons slot="start">
         <ion-menu-button></ion-menu-button>
       </ion-buttons>
-      <ion-title>DasBoard</ion-title>
+      <ion-title>{{'dashBoard'|translate}}</ion-title>
     </ion-toolbar>
   </ion-header>
   <ion-content class="ion-padding">

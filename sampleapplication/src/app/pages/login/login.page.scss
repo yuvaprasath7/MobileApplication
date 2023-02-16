@@ -1,15 +1,19 @@
 ion-content {
-  --ion-background-color: #F7F7F7;
   padding-top: 20%;
 }
 
 ion-toolbar {
-  --ion-background-color: #E9E9E9;
+  --ion-background-color: #C1DDE6;
+
 
   h1 {
     text-align: center;
   }
+
 }
+// ion-select{
+//   margin: 0% 39%;
+// }
 
 .header {
   display: flex;
@@ -25,8 +29,8 @@ ion-toolbar {
   }
 
   img {
-    width: 228px;
-    height: 115px;
+    width: 219px;
+    height: 108px;
     border-radius: 50%;
   }
 
@@ -56,8 +60,3 @@ ion-toolbar {
   }
 }
 
-.form-select {
-  margin-left: 25%;
-  margin-top: 3%;
-  border: unset;
-}

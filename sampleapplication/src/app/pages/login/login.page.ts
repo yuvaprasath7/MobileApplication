@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { TranslateService } from '@ngx-translate/core';
 @Component({
   selector: 'app-login',
@@ -7,9 +7,9 @@ import { TranslateService } from '@ngx-translate/core';
   styleUrls: ['./login.page.scss'],
 })
 export class LoginPage implements OnInit {
-  otpForm !: FormGroup;
+  otpForm: any | FormGroup;
   selected = 'English';
-  constructor(private formBuilder: FormBuilder,public translate: TranslateService) {
+  constructor(public translate: TranslateService) {
     translate.addLangs(['English', 'Hindi', 'Tamil', 'Bangla']);
   }
 
@@ -20,13 +20,13 @@ export class LoginPage implements OnInit {
   changeLang() {
     this.translate.use(this.selected);
   }
-  otpValidation(){
-    this.otpForm = this.formBuilder.group({
-      mobileNumber: ['', Validators.required],
+  otpValidation() {
+    this.otpForm = new FormGroup({
+      MobileNumber: new FormControl('', [Validators.required, Validators.pattern(/^\d{10}$/)]),
     });
   }
 
-  generateOTP(){
+  generateOTP() {
 
   }
 }

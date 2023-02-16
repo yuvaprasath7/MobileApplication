@@ -61,11 +61,8 @@ ion-icon{
   color: white;
 }
 .outer {
-  width: 120%  !important;
   height: 100% !important;
-  max-width: 150px !important; /* any size */
-  max-height: 150px !important; /* any size */
-  margin: -3px -18px;
+  max-width: 150px !important;
   border-radius: 100%;
   position: relative;
   background-size: 150px 150px;
@@ -94,12 +91,11 @@ ion-icon{
 
 }
 .upload_image{
-  width: 120% !important;
   height: 100% !important;
-  max-width: 150px !important; /* any size */
-  max-height: 150px !important; /* any size */
+  max-width: 150px !important;
   border-radius: 100%;
   position: relative;
-  overflow: hidden;
+  background-size: 150px 150px;
+  color: #232D39;
 }
 

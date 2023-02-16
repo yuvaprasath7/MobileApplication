@@ -2,19 +2,16 @@
   <ion-header>
     <ion-toolbar>
       <h1>{{'veriFication'|translate}}</h1>
-      <select  class="form-select w-50" aria-label="Default select example" #langSelect (change)="changeLang()"
-        [(ngModel)]="selected">
-        <option *ngFor="let lang of translate.getLangs()" [value]="lang" [selected]="lang === translate.currentLang"> {{
-          lang |translate}}</option>
-      </select>
+      <ion-item>
+        <ion-label>{{'selectYourLanguageg'|translate}}</ion-label>
+        <ion-select [(ngModel)]="selected" [value]="selected" (ionChange)="changeLang()">
+          <ion-select-option value="English">English</ion-select-option>
+          <ion-select-option value="Hindi">Hindi</ion-select-option>
+          <ion-select-option value="Tamil">Tamil</ion-select-option>
+          <ion-select-option value="Bangla">Bangla</ion-select-option>
+        </ion-select>
+      </ion-item>
     </ion-toolbar>
-    <!-- <ion-list>
-    <ion-item>
-      <ion-select placeholder="Select"  #langSelect  (change)="changeLang()" [(ngModel)]="selected">
-        <ion-select-option *ngFor="let lang of translate.getLangs()" [selected]="lang === translate.currentLang"  [value]="lang">{{ lang |translate}}</ion-select-option>
-      </ion-select>
-    </ion-item>
-  </ion-list> -->
   </ion-header>
 
 </div>
@@ -25,9 +22,15 @@
   </div>
   <form class="form" [formGroup]="otpForm">
     <ion-item>
-      <ion-input formControlName="mobileNumber" placeholder="{{'mobileNumber'|translate}}"></ion-input>
+      <ion-input type="number" formControlName="MobileNumber" placeholder="{{'mobileNumber'|translate}}"></ion-input>
     </ion-item>
-    <ion-button class="login" routerLink="/otppage" expand="full" shape="round"
+    <ion-text color="danger" *ngIf="otpForm.get('MobileNumber').touched && otpForm.get('MobileNumber').hasError('required')">
+      MobileNumber is required
+    </ion-text>
+    <ion-text color="danger" *ngIf="otpForm.get('MobileNumber').touched && otpForm.get('MobileNumber').hasError('pattern')">
+      Mobilenumber must be 10 digits && Numbers Only
+    </ion-text>
+    <ion-button class="login" routerLink="/otppage"  [disabled]="otpForm.invalid" expand="full" shape="round"
       (click)="generateOTP()">{{'getOtp'|translate}}</ion-button>
   </form>
 </ion-content>

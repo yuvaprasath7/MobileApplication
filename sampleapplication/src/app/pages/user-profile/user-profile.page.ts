@@ -1,7 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
+import { Router } from '@angular/router';
 import { Camera, CameraResultType, CameraSource } from '@capacitor/camera';
-import { ActionSheetController, Platform } from '@ionic/angular';
+import { ActionSheetController, Platform, ToastController } from '@ionic/angular';
+import { ServiceService } from 'src/app/_helper/service.service';
 @Component({
   selector: 'app-user-profile',
   templateUrl: './user-profile.page.html',
@@ -10,7 +12,7 @@ import { ActionSheetController, Platform } from '@ionic/angular';
 export class UserProfilePage implements OnInit {
   UserForm: FormGroup | any
   profilePicture: any
-  constructor(public actionSheetController: ActionSheetController) { }
+  constructor(public actionSheetController: ActionSheetController, private postuser: ServiceService, public toastController: ToastController,private router: Router) { }
 
   ngOnInit() {
     this.FormValidation();
@@ -21,13 +23,23 @@ export class UserProfilePage implements OnInit {
       UserName: new FormControl('', [Validators.required, Validators.pattern('^[a-zA-Z]+$')]),
       Email: new FormControl('', [Validators.required, Validators.pattern(/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$/)]),
       MobileNumber: new FormControl('', [Validators.required, Validators.pattern(/^\d{10}$/)]),
-      WhatshapNumber: new FormControl('',[Validators.required, Validators.pattern(/^\d{10}$/)]),
-      Address: new FormControl('', [Validators.required]),
+      WhatshapNumber: new FormControl('', [Validators.required, Validators.pattern(/^\d{10}$/)]),
       DateOfBirth: new FormControl('', [Validators.required]),
-      PinCode: new FormControl('',[Validators.required]),
+      Address: new FormControl('', [Validators.required]),
+      PinCode: new FormControl('', [Validators.required]),
     })
   }
-  Onsubmit() {
+  async Onsubmit() {
+    this.postuser.postInput(this.UserForm.value).subscribe({
+      next: async () => {
+        const toast = await this.toastController.create({
+          message: 'Your settings have been saved.',
+          duration: 2000
+        });
+        toast.present();
+      }
+    })
+    console.log(this.UserForm.value);
   }
 
   async presentActionSheet() {

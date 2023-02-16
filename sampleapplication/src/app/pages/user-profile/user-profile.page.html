@@ -19,7 +19,7 @@
     </div>
   </div>
   <p>Enter User Details </p>
-  <form class="form" [formGroup]="UserForm" (ngSubmit)="Onsubmit()">
+  <form class="form" [formGroup]="UserForm" (ngSubmit)="UserForm.valid && Onsubmit()">
     <ion-item>
       <ion-label position="floating">User Name</ion-label>
       <ion-input formControlName="UserName" placeholder="Enter Name"></ion-input>
@@ -61,7 +61,7 @@
       WhatshapNumber must be 10 digits && Numbers Only
     </div>
     <ion-item>
-      <ion-textarea formControlName="DateOfBirth" placeholder="Address" [autoGrow]="true">
+      <ion-textarea formControlName="Address" placeholder="Address" [autoGrow]="true">
       </ion-textarea>
     </ion-item>
     <div  class="danger"*ngIf="UserForm.get('Address').touched && UserForm.get('Address').hasError('required')">
@@ -81,7 +81,7 @@
     <div class="danger"*ngIf="UserForm.get('PinCode').touched && UserForm.get('PinCode').hasError('required')">
       PinCode is required
     </div>
-    <ion-button class="login" routerLink="/otppage" [disabled]="UserForm.invalid" expand="full"
+    <ion-button type="submit" class="login"  [disabled]="UserForm.invalid" expand="full"
       shape="round">Submit</ion-button>
   </form>
 </ion-content>
