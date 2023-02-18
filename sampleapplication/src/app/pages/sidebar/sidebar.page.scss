@@ -29,8 +29,9 @@ ion-icon{
 }
 
 .side_img{
-  width: 100px;
-  margin: 1% 30%;
+  width: 85%;
+  height: 32%;
+  margin: -46px 21px;
 }
 
 ion-title{
@@ -38,11 +39,15 @@ ion-title{
 }
 
 img{
-  margin: 96px 0px;
+  height: 100vh;
 }
 
 h6{
   text-align: center;
   font-size: 25px;
+}
+
+ion-menu-toggle{
+  padding-bottom: 20px;
 }
 
