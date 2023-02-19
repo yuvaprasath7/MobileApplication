@@ -1,61 +1,124 @@
-ion-content {
-  padding-top: 20%;
-}
-
-ion-toolbar {
-  --ion-background-color: #C1DDE6;
-
-
-  h1 {
-    text-align: center;
-  }
-
-}
-// ion-select{
-//   margin: 0% 39%;
+// ion-content {
+//   padding-top: 20%;
 // }
 
-.header {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding-top: 25%;
+// ion-toolbar {
+//   --ion-background-color: #C1DDE6;
 
-  h1 {
-    font-weight: 700;
-    font-size: 26px;
-    color: #010100;
-    margin-bottom: 15%;
+
+//   h1 {
+//     text-align: center;
+//   }
+
+// }
+// // ion-select{
+// //   margin: 0% 39%;
+// // }
+
+// .header {
+//   display: flex;
+//   flex-direction: column;
+//   align-items: center;
+//   padding-top: 25%;
+
+//   h1 {
+//     font-weight: 700;
+//     font-size: 26px;
+//     color: #010100;
+//     margin-bottom: 15%;
+//   }
+
+//   img {
+//     width: 60%;
+//     border-radius: 50%;
+//   }
+
+//   p {
+//     width: 79%;
+//     text-align: center;
+//     color: #AAAAAA;
+//   }
+// }
+
+
+
+
+
+// .form {
+//   margin-top: 15%;
+//   padding-left: 30px;
+//   padding-right: 30px;
+
+//   ion-button {
+//     margin-top: 42px;
+//     height: 41px;
+//     font-size: 18px;
+//     width: 75%;
+//     margin-left: 33px;
+//     border-radius: 50%;
+//   }
+// }
+
+
+
+
+.logo_name{
+  position: absolute;
+  z-index: 1;
+
+  .heder_name{
+    display: flex;
+
+    p{
+      color: #ffff;
+      width: 74%;
+      font-weight: bolder;
+    }
   }
-
-  img {
-    width: 60%;
-    border-radius: 50%;
-  }
-
-  p {
-    width: 79%;
-    text-align: center;
-    color: #AAAAAA;
+  img{
+    width: 25%;
+    margin: 6px;
   }
 }
 
-
-
-
-
-.form {
-  margin-top: 15%;
-  padding-left: 30px;
-  padding-right: 30px;
-
-  ion-button {
-    margin-top: 42px;
-    height: 41px;
-    font-size: 18px;
-    width: 75%;
-    margin-left: 33px;
-    border-radius: 50%;
+.heder_image{
+  img{
+    height: 45vh;
   }
+}
+
+.mobile_card{
+  position: absolute;
+  top: 25%;
+  left: 10%;
+}
+
+.label{
+  color: #A7A7B1;
+}
+
+ion-button{
+margin-top: 40px;
+
+}
+
+ion-card{
+  height: 60vh;
+}
+
+ion-item{
+  margin-top: 50%;
+}
+
+
+.verify_btn{
+  background: #F17B2D;
+  color: #fff;
+  padding: 3% 18%;
+  margin: 15% 13%;
+  border-radius: 7px;
+  width: 70%;
+  font-weight: bolder;
+  font-size: 16px;
 }
 

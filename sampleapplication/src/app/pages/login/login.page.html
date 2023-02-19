@@ -1,4 +1,4 @@
-<div class="head">
+<!-- <div class="head">
   <ion-header>
     <ion-toolbar>
       <h1>{{'veriFication'|translate}}</h1>
@@ -13,7 +13,6 @@
       </ion-item>
     </ion-toolbar>
   </ion-header>
-
 </div>
 <ion-content class="fondologin">
   <div class="header">
@@ -33,4 +32,27 @@
     <ion-button class="login" routerLink="/otppage"  [disabled]="otpForm.invalid" expand="full" shape="round"
       (click)="generateOTP()">{{'getOtp'|translate}}</ion-button>
   </form>
+</ion-content> -->
+
+<ion-content>
+  <div class="logo_name">
+    <div class="heder_name">
+      <img src="./../../../assets/image/cropped-logo4.png">
+      <p>Sri Ramakrishna Mission Vidyalaya PeriyanaickenPalyam srkv(post) Coimbatore-641020</p>
+    </div>
+  </div>
+  <div class="heder_image">
+    <img src="./../../../assets/image/power_of_10_hero_bg2x.png">
+  </div>
+  <div class="mobile_card">
+    <ion-card>
+      <ion-card-content>
+        <ion-item>
+          <ion-label class="label" position="floating">Enter The MobileNumber</ion-label>
+          <ion-input type="number"></ion-input>
+        </ion-item>
+        <button class="verify_btn" routerLink="/user-profile" >Get Otp</button>
+      </ion-card-content>
+    </ion-card>
+  </div>
 </ion-content>
