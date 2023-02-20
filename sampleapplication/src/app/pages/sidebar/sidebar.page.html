@@ -26,7 +26,7 @@
             {{'event'|translate}}
           </ion-label>
         </ion-item>
-        <ion-item >
+        <ion-item>
           <ion-icon name="shield-checkmark-outline"></ion-icon>
           <ion-label>
             {{'accomdation'|translate}}
@@ -52,9 +52,9 @@
           {{"feeadBack"|translate}}
         </ion-label>
       </ion-item>
-      <ion-item >
+      <ion-item>
         <ion-icon name="exit-outline"></ion-icon>
-        <ion-label  routerLink="/login" >
+        <ion-label routerLink="/login">
           {{'logOut'|translate}}
         </ion-label>
       </ion-item>
@@ -62,13 +62,29 @@
   </ion-content>
 </ion-menu>
 <div class="ion-page" id="main-content">
-  <ion-header>
-    <ion-toolbar>
-      <ion-buttons slot="start">
-        <ion-menu-button></ion-menu-button>
+  <div class="dashboard">
+    <div class="heder_img">
+      <img src="assets/image/power_of_10_hero_bg2x.png" width="100%">
+    </div>
+    <div class="heder_content">
+      <img src="assets/image/cropped-logo4.png" width="70px">
+      <p>SRKV</p>
+    </div>
+    <div class="toggle_menu">
+      <ion-buttons>
+        <ion-menu-toggle>
+          <ion-icon name="settings-sharp" size="large"></ion-icon>
+        </ion-menu-toggle>
       </ion-buttons>
-      <ion-title>{{'dashBoard'|translate}}</ion-title>
-    </ion-toolbar>
-    <img src="./../../../assets/image/9c4d79bf32f9bad0ed044349306e6962.jpeg">
-  </ion-header>
+    </div>
+  </div>
+  <ion-card>
+    <ion-card-content>
+      <div class="user_profile">
+        <h2>Dashboard</h2>
+        <img src="assets/image/profile-removebg-preview.png" width="50%">
+        <h3>Name</h3>
+      </div>
+    </ion-card-content>
+  </ion-card>
 </div>

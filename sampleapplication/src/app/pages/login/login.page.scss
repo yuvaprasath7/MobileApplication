@@ -74,17 +74,26 @@
   }
 }
 
-ion-card{
-  // position: absolute;
-  // top: 35%;
-  height: 50%;
+ion-card {
+  position: absolute;
+  top: 15%;
+  right: 4%;
+  left: 4%;
   display: grid;
   place-content: center;
-  width: 75%;
-  margin: 0% 13%;
+  height: 75%;
+  border-radius: 20px;
 
-  ion-button {
-    margin-top: 10%;
+  .Next_btn {
+    margin-top: 13%;
+    background: #F17B2D;
+    padding: 4% 9%;
+    color: #fff;
+    font-weight: bolder;
+    border-radius: 7px;
+  }
+
+  .mobile_logo {
+    text-align: center;
   }
 }
-

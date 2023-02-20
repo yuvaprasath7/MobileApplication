@@ -1,4 +1,4 @@
-<div class="head">
+<!-- <div class="head">
   <ion-header>
     <ion-toolbar>
       <h1>User-Profile</h1>
@@ -84,4 +84,63 @@
     <ion-button type="submit" class="login"  [disabled]="UserForm.invalid" expand="full"
       shape="round">Submit</ion-button>
   </form>
+</ion-content> -->
+
+
+
+<ion-content>
+  <div class="user_heder">
+    <div class="heder_img">
+      <img src="assets/image/power_of_10_hero_bg2x.png" width="100%">
+    </div>
+    <div class="heder_content">
+      <img src="assets/image/cropped-logo4.png" width="70px">
+      <p>SRKV</p>
+    </div>
+    <div class="user_profil">
+      <ion-card>
+        <ion-card-content>
+          <form>
+            <div class="container">
+              <div class="outer" [ngStyle]="{'background-image': 'url(./../../../../assets/image/download.png)'}">
+                <img class="upload_image" [src]="profilePicture">
+                <div class="inner" (click)="presentActionSheet()">
+                  <ion-icon name="camera" class="camera-icon"></ion-icon>
+                </div>
+              </div>
+            </div>
+            <ion-item>
+              <ion-label position="floating">User Name</ion-label>
+              <ion-input placeholder="Enter UserName"></ion-input>
+            </ion-item>
+            <ion-item>
+              <ion-label position="floating">Email</ion-label>
+              <ion-input placeholder="Enter Email"></ion-input>
+            </ion-item>
+            <ion-item>
+              <ion-label position="floating">MobileNumber</ion-label>
+              <ion-input placeholder="Enter MobileNumber"></ion-input>
+            </ion-item>
+            <ion-item>
+              <ion-label position="floating">WhatshapNumber</ion-label>
+              <ion-input placeholder="Enter WhatshapNumber"></ion-input>
+            </ion-item>
+            <ion-item>
+              <ion-textarea placeholder="Address" [autoGrow]="true">
+              </ion-textarea>
+            </ion-item>
+            <ion-item>
+              <ion-label position="floating">Date Of Birth</ion-label>
+              <ion-input placeholder="Enter Date Of Birth"></ion-input>
+            </ion-item>
+            <ion-item>
+              <ion-label position="floating">PinCode</ion-label>
+              <ion-input placeholder="Enter PinCode"></ion-input>
+            </ion-item>
+            <ion-button routerLink="/sidebar">Save</ion-button>
+          </form>
+        </ion-card-content>
+      </ion-card>
+    </div>
+  </div>
 </ion-content>

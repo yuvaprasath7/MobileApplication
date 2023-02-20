@@ -12,6 +12,7 @@ import { ServiceService } from 'src/app/_helper/service.service';
 export class UserProfilePage implements OnInit {
   UserForm: FormGroup | any
   user:any
+  date:any
   profilePicture: any
   constructor(public actionSheetController: ActionSheetController, private postuser: ServiceService, public toastController: ToastController,private router: Router) { }
 
