@@ -1,61 +1,32 @@
 <ion-menu contentId="main-content">
-  <ion-header>
-    <ion-toolbar>
-      <ion-title>{{'menu'|translate}}</ion-title>
-    </ion-toolbar>
-  </ion-header>
-  <ion-content class="ion-padding">
-    <img class="side_img" src="./../../../assets/image/c667ea8efad5a59c560b40e76d590104-removebg-preview.png">
-    <ion-list lines="none">
-      <ion-menu-toggle autoHide="false">
-        <ion-item routerLink="/user-profile" routerLinkActive="active">
-          <ion-icon name="person-outline"></ion-icon>
-          <ion-label>
-            {{'userProfileRegister'|translate}}
-          </ion-label>
-        </ion-item>
-        <ion-item>
-          <ion-icon name="car-outline"></ion-icon>
-          <ion-label>
-            {{'travel'|translate}}
-          </ion-label>
-        </ion-item>
-        <ion-item>
-          <ion-icon name="today-outline"></ion-icon>
-          <ion-label>
-            {{'event'|translate}}
-          </ion-label>
-        </ion-item>
-        <ion-item>
-          <ion-icon name="shield-checkmark-outline"></ion-icon>
-          <ion-label>
-            {{'accomdation'|translate}}
-          </ion-label>
-        </ion-item>
-        <ion-item>
-          <ion-icon name="receipt-outline"></ion-icon>
-          <ion-label>
-            {{'support'|translate}}
-          </ion-label>
-        </ion-item>
-      </ion-menu-toggle>
-    </ion-list>
-    <h6>{{'accountSeetting'|translate}}</h6>
-    <ion-list lines="none">
+  <div class="heder_image">
+    <div class="profile_view">
+      <img src="./../../../assets/image/profile-removebg-preview.png">
+      <h4>Name</h4>
+      <p>MobileNumber</p>
+    </div>
+  </div>
+  <ion-content>
+    <ion-list>
       <ion-item>
-        <ion-toggle (ionChange)="onToggleColorTheme($event)"></ion-toggle>
-        <ion-label>Dark Theme Toogle</ion-label>
+        <ion-label>{{'selectYourLanguageg'|translate}}</ion-label>
+        <ion-select [(ngModel)]="selected" [value]="selected" (ionChange)="changeLang()">
+          <ion-select-option value="English">English</ion-select-option>
+          <ion-select-option value="Hindi">Hindi</ion-select-option>
+          <ion-select-option value="Tamil">Tamil</ion-select-option>
+          <ion-select-option value="Bangla">Bangla</ion-select-option>
+        </ion-select>
       </ion-item>
       <ion-item>
         <ion-icon name="chatbox-outline"></ion-icon>
         <ion-label>
-          {{"feeadBack"|translate}}
+          Help
         </ion-label>
       </ion-item>
       <ion-item>
-        <ion-icon name="exit-outline"></ion-icon>
-        <ion-label routerLink="/login">
-          {{'logOut'|translate}}
+        <ion-icon name="chatbox-outline"></ion-icon>
+        <ion-label>
+          Help
         </ion-label>
       </ion-item>
     </ion-list>
@@ -78,7 +49,7 @@
       </ion-buttons>
     </div>
   </div>
-  <ion-card>
+  <!-- <ion-card>
     <ion-card-content>
       <div class="user_profile">
         <h2>Dashboard</h2>
@@ -86,5 +57,15 @@
         <h3>Name</h3>
       </div>
     </ion-card-content>
-  </ion-card>
+  </ion-card> -->
 </div>
+
+
+
+
+<!-- <ion-item>
+        <ion-toggle (ionChange)="onToggleColorTheme($event)"></ion-toggle>
+        <ion-label>Dark Theme Toogle</ion-label>
+      </ion-item> -->
+
+

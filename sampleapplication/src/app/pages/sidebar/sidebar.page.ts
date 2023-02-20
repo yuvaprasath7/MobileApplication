@@ -9,19 +9,24 @@ import { TranslateService } from '@ngx-translate/core';
 })
 export class SidebarPage implements OnInit {
   dark = false;
+  selected = 'English';
 
-  constructor(private menu: MenuController,private renderer: Renderer2 ) {
+  constructor(private menu: MenuController,private renderer: Renderer2,public translate: TranslateService ) {
+    translate.addLangs(['English', 'Hindi', 'Tamil', 'Bangla']);
   }
   ngOnInit() {
   }
-  onToggleColorTheme(event: any) {
-    console.log(event.detail.checked)
-
-    if (event.detail.checked) {
-      this.renderer.setAttribute(document.body, 'color-theme', 'dark');
-    } else {
-      this.renderer.setAttribute(document.body, 'color-theme', 'light');
-    }
-
+  changeLang() {
+    this.translate.use(this.selected);
   }
+  // onToggleColorTheme(event: any) {
+  //   console.log(event.detail.checked)
+
+  //   if (event.detail.checked) {
+  //     this.renderer.setAttribute(document.body, 'color-theme', 'dark');
+  //   } else {
+  //     this.renderer.setAttribute(document.body, 'color-theme', 'light');
+  //   }
+
+  // }
 }
