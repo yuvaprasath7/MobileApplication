@@ -1,54 +1,3 @@
-// h5{
-//   text-align: center;
-//   color:#664bdc;
-//   font-size: 26px;
-//   font-weight: 600;
-// }
-
-// ion-list{
-//   flex-direction: column;
-//   align-items: center;
-// }
-
-// ion-item{
-//   font-size: 15px;
-//   padding: 2px;
-// }
-
-// ion-menu-button{
-//   color:#664bdc;
-//   font-size: 30px;
-//   margin-top: 10px;
-//   margin-left: 20px;
-// }
-
-// ion-icon{
-//   font-size: 29px;
-//   padding: 14px;
-// }
-
-// .side_img{
-//   width: 85%;
-//   height: 32%;
-//   margin: -46px 21px;
-// }
-
-// ion-title{
-//   margin-top: 10px;
-// }
-
-// img{
-//   height: 100vh;
-// }
-
-// h6{
-//   text-align: center;
-//   font-size: 25px;
-// }
-
-// ion-menu-toggle{
-//   padding-bottom: 20px;
-// }
 
 .heder_img {
   position: relative;
@@ -61,7 +10,7 @@
 
   p {
     color: #ffff;
-    margin: 27% 15%;
+    width: 67%;
   }
 }
 
@@ -95,7 +44,9 @@ ion-card {
   }
 }
 
-
+ion-icon{
+  padding: 3%;
+}
 
 
 .heder_image {
@@ -118,4 +69,8 @@ ion-card {
     }
   }
 
+}
+
+ion-segment-button{
+  font-weight: bold;
 }

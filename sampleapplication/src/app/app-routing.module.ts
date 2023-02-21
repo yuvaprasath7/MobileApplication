@@ -9,10 +9,6 @@ const routes: Routes = [
     loadChildren: () => import('./pages/login/login.module').then(m => m.LoginPageModule)
   },
   {
-    path: 'home',
-    loadChildren: () => import('./pages/home/home.module').then(m => m.HomePageModule)
-  },
-  {
     path: 'otppage',
     loadChildren: () => import('./pages/otppage/otppage.module').then(m => m.OTPPagePageModule)
   },

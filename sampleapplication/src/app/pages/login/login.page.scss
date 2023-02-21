@@ -84,16 +84,15 @@ ion-card {
   height: 75%;
   border-radius: 20px;
 
-  .Next_btn {
-    margin-top: 13%;
-    background: #F17B2D;
-    padding: 4% 9%;
-    color: #fff;
-    font-weight: bolder;
-    border-radius: 7px;
-  }
-
   .mobile_logo {
     text-align: center;
+  }
+
+  ion-button {
+    margin-top: 10%;
+  }
+
+  ion-label{
+    color: #A1A0AB;
   }
 }

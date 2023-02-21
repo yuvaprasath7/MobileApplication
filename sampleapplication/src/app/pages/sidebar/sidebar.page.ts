@@ -1,5 +1,5 @@
-import { Component, OnInit, Renderer2 } from '@angular/core';
-import { MenuController } from '@ionic/angular';
+import { Component, OnInit, Renderer2, ViewChild } from '@angular/core';
+import { IonSlides, MenuController } from '@ionic/angular';
 import { TranslateService } from '@ngx-translate/core';
 
 @Component({
@@ -9,6 +9,7 @@ import { TranslateService } from '@ngx-translate/core';
 })
 export class SidebarPage implements OnInit {
   dark = false;
+  segment:any
   selected = 'English';
 
   constructor(private menu: MenuController,private renderer: Renderer2,public translate: TranslateService ) {
@@ -19,14 +20,7 @@ export class SidebarPage implements OnInit {
   changeLang() {
     this.translate.use(this.selected);
   }
-  // onToggleColorTheme(event: any) {
-  //   console.log(event.detail.checked)
 
-  //   if (event.detail.checked) {
-  //     this.renderer.setAttribute(document.body, 'color-theme', 'dark');
-  //   } else {
-  //     this.renderer.setAttribute(document.body, 'color-theme', 'light');
-  //   }
 
-  // }
+
 }

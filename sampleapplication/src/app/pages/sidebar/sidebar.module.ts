@@ -8,16 +8,21 @@ import { SidebarPageRoutingModule } from './sidebar-routing.module';
 
 import { SidebarPage } from './sidebar.page';
 import { LangChangeEvent, TranslateModule, TranslateService } from '@ngx-translate/core';
+import { TravelComponent } from "../../dashboardcomponent/travel/travel.component";
+import { StayComponent } from 'src/app/dashboardcomponent/stay/stay.component';
+import { EventComponent } from 'src/app/dashboardcomponent/event/event.component';
+import { SupportComponent } from 'src/app/dashboardcomponent/support/support.component';
+
 
 @NgModule({
-  imports: [
-    CommonModule,
-    FormsModule,
-    IonicModule,
-    SidebarPageRoutingModule,
-    TranslateModule
-  ],
-  declarations: [SidebarPage]
+    declarations: [SidebarPage,TravelComponent,StayComponent,EventComponent,SupportComponent],
+    imports: [
+        CommonModule,
+        FormsModule,
+        IonicModule,
+        SidebarPageRoutingModule,
+        TranslateModule,
+    ]
 })
 export class SidebarPageModule {
 }
