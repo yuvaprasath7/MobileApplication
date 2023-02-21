@@ -1,11 +1,18 @@
+
+ion-card{
+  margin-top: 11%;
+  border-radius: 20px;
+}
 .stay_page {
   .stay {
     h4{
       text-align: center;
-      padding: 7%;
     }
   }
   ion-item {
-    padding:4%;
+    padding:2%;
+  }
+  ion-text{
+    color: #F17B2D;
   }
 }

@@ -1,18 +1,19 @@
 .support_page {
-  .support {
     h4 {
       text-align: center;
-      padding: 7%;
+      color: #F17B2D;
     }
-  }
 
-  .info_card {
-    ion-card {
+
+    .main_card{
       padding: 5%;
+
+      h3{
+        color: #F17B2D;
+      }
     }
   }
 
-  .contact_card {
-    padding-top: 8%;
-  }
-}
+
+
+
