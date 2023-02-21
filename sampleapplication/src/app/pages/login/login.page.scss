@@ -71,6 +71,7 @@
 
   p {
     color: #ffff;
+    margin-left: 8px;
   }
 }
 
@@ -95,4 +96,8 @@ ion-card {
   ion-label{
     color: #A1A0AB;
   }
+}
+
+.btncolor {
+  --background: var(--ion-color-btn);
 }

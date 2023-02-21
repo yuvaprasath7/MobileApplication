@@ -90,7 +90,9 @@
               *ngIf="UserForm.get('PinCode').touched && UserForm.get('PinCode').hasError('required')">
               PinCode is required
             </ion-text>
-            <ion-button type="submit" routerLink="/sidebar" [disabled]="UserForm.invalid">Save</ion-button>
+            <div class="save_btn">
+              <ion-button type="submit" class="btncolor" routerLink="/sidebar" [disabled]="UserForm.invalid">Save</ion-button>
+            </div>
           </form>
         </ion-card-content>
       </ion-card>

@@ -1,68 +1,3 @@
-// ion-content {
-//   padding-top: 20%;
-// }
-
-// ion-toolbar {
-//   --ion-background-color: #E9E9E9;
-
-//   h1 {
-//     text-align: center;
-//   }
-// }
-
-// .header {
-//   display: flex;
-//   flex-direction: column;
-//   align-items: center;
-//   padding-top: 25%;
-
-//   h1 {
-//     font-weight: 700;
-//     font-size: 26px;
-//     color: #010100;
-//     margin-bottom: 15%;
-//   }
-
-//   img {
-//     width: 60%;
-//     border-radius: 50%;
-//   }
-
-//   p {
-//     width: 95%;
-//     text-align: center;
-//     padding-top: 12px;
-//     color: #AAAAAA;
-//   }
-// }
-// .form {
-//   margin-top: 15%;
-//   padding-left: 30px;
-//   padding-right: 30px;
-
-//   ion-button {
-//     margin-top: 42px;
-//     height: 41px;
-//     font-size: 18px;
-//     width: 75%;
-//     margin-left: 33px;
-//     border-radius: 50%;
-//   }
-
-//   p {
-//     width: 95%;
-//     text-align: center;
-//     padding-top: 12px;
-//     color: #AAAAAA;
-//   }
-
-//   ng-otp-input{
-//     text-align: center;
-//   }
-// }
-
-
-
 .heder_img {
   position: relative;
 }
@@ -74,6 +9,7 @@
 
   p {
     color: #ffff;
+    margin-left: 8px;
   }
 }
 
@@ -90,6 +26,8 @@ ion-card {
 
   .otp_logo{
     text-align: center;
+    position: relative;
+    top: -9%;
   }
 
   h2{
@@ -111,5 +49,9 @@ ion-card {
   ion-button {
     margin-top: 10%;
   }
+}
+
+.btncolor {
+  --background: var(--ion-color-btn);
 }
 

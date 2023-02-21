@@ -63,10 +63,13 @@
   right: 4%;
 }
 
-ion-button{
-  margin:4% 0%;
-}
-
 ion-card{
   border-radius: 20px;
+}
+.save_btn{
+  margin:6% 0%;
+  text-align:center ;
+}
+.btncolor {
+  --background: var(--ion-color-btn);
 }
