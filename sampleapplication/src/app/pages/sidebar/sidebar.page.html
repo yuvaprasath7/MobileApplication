@@ -1,12 +1,15 @@
-<!-- <ion-menu contentId="main-content">
-  <div class="heder_image">
-    <div class="profile_view">
-      <img src="./../../../assets/image/profile-removebg-preview.png" width="40%">
-      <h4>Name</h4>
-      <p>MobileNumber</p>
-    </div>
-  </div>
-  <ion-content>
+
+
+
+<ion-menu contentId="main-content">
+    <ion-toolbar>
+      <div class="profile_view">
+        <img src="./../../../assets/image/profile-removebg-preview.png" width="30%">
+        <h4>Name</h4>
+        <p>MobileNumber</p>
+      </div>
+    </ion-toolbar>
+  <ion-content class="ion-padding">
     <ion-list>
       <ion-item lines="none">
         <ion-icon name="globe-outline"></ion-icon>
@@ -26,66 +29,6 @@
       </ion-item>
     </ion-list>
   </ion-content>
-</ion-menu>
-<div class="ion-page" id="main-content">
-  <div class="dashboard">
-    <div class="heder_img">
-      <img src="assets/image/power_of_10_hero_bg2x.png" width="100%">
-    </div>
-    <div class="heder_content">
-      <img src="assets/image/cropped-logo4.png" width="60px">
-      <p>Sri Ramakrishna mission vidyalaya coimbatore-641020 </p>
-    </div>
-    <div class="toggle_menu">
-      <ion-buttons>
-        <ion-menu-toggle>
-          <ion-icon name="settings-sharp" size="large"></ion-icon>
-        </ion-menu-toggle>
-      </ion-buttons>
-    </div>
-  </div>
-  <ion-content>
-    <ion-segment [(ngModel)]="segment">
-      <ion-segment-button value="Travel">
-        Travel
-      </ion-segment-button>
-      <ion-segment-button value="Event">
-        Event
-      </ion-segment-button>
-      <ion-segment-button value="Stay">
-        Stay
-      </ion-segment-button>
-      <ion-segment-button value="Support">
-        Support
-      </ion-segment-button>
-    </ion-segment>
-    <div [ngSwitch]="segment">
-      <div *ngSwitchCase="'Travel'">
-        <app-travel></app-travel>
-      </div>
-
-      <div *ngSwitchCase="'Event'">
-        <app-event></app-event>
-      </div>
-
-      <div *ngSwitchCase="'Stay'">
-        <app-stay></app-stay>
-      </div>
-      <div *ngSwitchCase="'Support'">
-        <app-support></app-support>
-      </div>
-    </div>
-  </ion-content>
-</div> -->
-
-
-<ion-menu contentId="main-content">
-  <ion-header>
-    <ion-toolbar>
-      <ion-title>Menu Content</ion-title>
-    </ion-toolbar>
-  </ion-header>
-  <ion-content class="ion-padding">This is the menu content.</ion-content>
 </ion-menu>
 <div class="ion-page" id="main-content">
 
@@ -117,7 +60,7 @@
       <ion-segment-button value="Stay">
         Stay
       </ion-segment-button>
-      <ion-segment-button value="Support">
+      <ion-segment-button class="support" value="Support">
         Support
       </ion-segment-button>
     </ion-segment>
@@ -125,11 +68,9 @@
       <div *ngSwitchCase="'Travel'">
         <app-travel></app-travel>
       </div>
-
       <div *ngSwitchCase="'Event'">
         <app-event></app-event>
       </div>
-
       <div *ngSwitchCase="'Stay'">
         <app-stay></app-stay>
       </div>
