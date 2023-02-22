@@ -35,8 +35,8 @@ export class UserProfilePage implements OnInit {
     this.postuser.postInput(this.UserForm.value).subscribe({
       next: async () => {
         const toast = await this.toastController.create({
-          message: 'Your settings have been saved.',
-          duration: 2000
+          message: 'successful have been saved.',
+          duration: 1000
         });
         toast.present();
       }
