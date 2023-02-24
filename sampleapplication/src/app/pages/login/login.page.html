@@ -1,40 +1,3 @@
-<!-- <div class="head">
-  <ion-header>
-    <ion-toolbar>
-      <h1>{{'veriFication'|translate}}</h1>
-      <ion-item>
-        <ion-label>{{'selectYourLanguageg'|translate}}</ion-label>
-        <ion-select [(ngModel)]="selected" [value]="selected" (ionChange)="changeLang()">
-          <ion-select-option value="English">English</ion-select-option>
-          <ion-select-option value="Hindi">Hindi</ion-select-option>
-          <ion-select-option value="Tamil">Tamil</ion-select-option>
-          <ion-select-option value="Bangla">Bangla</ion-select-option>
-        </ion-select>
-      </ion-item>
-    </ion-toolbar>
-  </ion-header>
-</div>
-<ion-content class="fondologin">
-  <div class="header">
-    <img src="./../../../assets/image/download__1_-removebg-preview.png">
-    <p>{{'weWillSendYouOneTimePassword'|translate}}</p>
-  </div>
-  <form class="form" [formGroup]="otpForm">
-    <ion-item>
-      <ion-input type="number" formControlName="MobileNumber" placeholder="{{'mobileNumber'|translate}}"></ion-input>
-    </ion-item>
-    <ion-text color="danger" *ngIf="otpForm.get('MobileNumber').touched && otpForm.get('MobileNumber').hasError('required')">
-      MobileNumber is required
-    </ion-text>
-    <ion-text color="danger" *ngIf="otpForm.get('MobileNumber').touched && otpForm.get('MobileNumber').hasError('pattern')">
-      Mobilenumber must be 10 digits && Numbers Only
-    </ion-text>
-    <ion-button class="login" routerLink="/otppage"  [disabled]="otpForm.invalid" expand="full" shape="round"
-      (click)="generateOTP()">{{'getOtp'|translate}}</ion-button>
-  </form>
-</ion-content> -->
-
-
 <ion-content>
   <div class="heder_img">
     <img src="assets/image/power_of_10_hero_bg2x.png" width="100%">
@@ -59,7 +22,6 @@
       <ion-text color="danger" *ngIf="otpForm.get('MobileNumber').touched && otpForm.get('MobileNumber').hasError('pattern')">
         Mobilenumber must be 10 digits && Numbers Only
       </ion-text>
-
       <ion-button  [disabled]="otpForm.invalid"  (click)="generateOTP()" routerLink="/otppage" expand="block"  class="btncolor">
         Next
       </ion-button>

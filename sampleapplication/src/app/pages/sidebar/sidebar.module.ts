@@ -12,6 +12,7 @@ import { TravelComponent } from "../../dashboardcomponent/travel/travel.componen
 import { StayComponent } from 'src/app/dashboardcomponent/stay/stay.component';
 import { EventComponent } from 'src/app/dashboardcomponent/event/event.component';
 import { SupportComponent } from 'src/app/dashboardcomponent/support/support.component';
+import { TabPageModule } from '../tab/tab.module';
 
 
 @NgModule({
@@ -22,6 +23,7 @@ import { SupportComponent } from 'src/app/dashboardcomponent/support/support.com
         IonicModule,
         SidebarPageRoutingModule,
         TranslateModule,
+        TabPageModule
     ]
 })
 export class SidebarPageModule {
